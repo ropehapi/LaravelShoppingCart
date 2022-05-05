@@ -1,5 +1,5 @@
 <?php
-namespace Darryldecode\Tests\helpers;
+namespace Ropehapi\Tests\helpers;
 
 use Illuminate\Contracts\Database\ModelIdentifier;
 
