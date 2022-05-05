@@ -1,12 +1,12 @@
 {
-    "name": "darryldecode/cart",
+    "name": "ropehapi/cart",
     "description": "Laravel 5 Shopping cart",
     "keywords": ["laravel", "shopping cart", "cart"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Darryl Fernandez",
-            "email": "engrdarrylfernandez@gmail.com"
+            "name": "Pedro Yoshimura",
+            "email": "ropehapi@gmail.com"
         }
     ],
     "require": {
@@ -22,17 +22,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Darryldecode\\": "src/Darryldecode"
+            "Ropehapi\\": "src/Ropehapi"
         }
     },
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
-                "Darryldecode\\Cart\\CartServiceProvider"
+                "Ropehapi\\Cart\\CartServiceProvider"
             ],
             "aliases": {
-                "Cart": "Darryldecode\\Cart\\Facades\\CartFacade"
+                "Cart": "Ropehapi\\Cart\\Facades\\CartFacade"
             }
         }
     }
