@@ -145,16 +145,17 @@ class Cart
      * add item to the cart, it can be an array or multi dimensional array
      *
      * @param string|array $id
-     * @param string $name
-     * @param float $price
-     * @param int $quantity
+     * @param string|null $name
+     * @param float|null $price
+     * @param int|null $quantity
+     * @param string|null $comment
      * @param array $attributes
      * @param CartCondition|array $conditions
      * @param string $associatedModel
      * @return $this
      * @throws InvalidItemException
      */
-    public function add($id, $name = null, $price = null, $quantity = null, $attributes = array(), $conditions = array(), $associatedModel = null)
+    public function add($id, $name = null, $price = null, $quantity = null, $comment = null,$attributes = array(), $conditions = array(), $associatedModel = null)
     {
         // if the first argument is an array,
         // we will need to call add again
@@ -193,6 +194,7 @@ class Cart
             'name' => $name,
             'price' => Helpers::normalizePrice($price),
             'quantity' => $quantity,
+            'comment' => $comment,
             'attributes' => new ItemAttributeCollection($attributes),
             'conditions' => $conditions
         );
